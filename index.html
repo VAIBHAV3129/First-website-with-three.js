@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>build_log // v0.1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="webgl-viewport"></canvas>
 
+    <aside class="system-console">
+        <div class="console-header">SYS_STATUS</div>
+        <div class="console-log">
+            <p>> render_loop: active</p>
+            <p>> fps: 60.02</p>
+            <p>> camera_z: <span id="z-val">30</span></p>
+            <p>> state: unstable</p>
+        </div>
+    </aside>
+
+    <main class="dashboard-root">
+        <header class="hero-header">
+            <h1>build_log // v0.1.0</h1>
+            <p>just some raw three.js experiments. don't touch the camera offset or it all breaks.</p>
+        </header>
+
+        <section class="glass-card stage-alpha">
+            <h2>01 // the struggle</h2>
+            <p>spent 2 hours fighting node_modules and path errors just to get a black screen. finally saw a cube. pure euphoria.</p>
+        </section>
+
+        <section class="panel-stage stage-beta">
+            <h2>02 // mapping hell</h2>
+            <p>tryinna to wrap textures around a sphere is a nightmare. it stretched. i cried. fixed it with a random number. works now.</p>
+        </section>
+
+        <section class="glass-card stage-gamma">
+            <h2>03 // scroll_logic.js</h2>
+            <p>hit a weird bug where the camera flew into the void. fixed it by multiplying by 0.05. why? idk. it just feels right.</p>
+        </section>
+
+        <section class="panel-stage stage-delta">
+            <h2>04 // shipping it</h2>
+            <p>too many shapes. too much rotation. honestly? looks sick. shipping it before i find another bug.</p>
+        </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
